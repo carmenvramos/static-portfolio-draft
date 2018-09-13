@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-areas: "head head head "
+                       "bio tech soft "
+                       "skills list list ";
+                      
+  grid-template-columns: repeat(3, 1fr);  
+  grid-template-rows: 10vh 40vh 40vh 10vh;
+  margin: 0;
+  max-height: 100vh;
+    }   
+
+/* Main sections */
+body > * {
+  border: 1px solid black;
+}
+body > header {
+  
+  align-items: flex-end;
+  grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}   
+
+body header nav a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  padding-top: 50px;
+  padding-left: 120px;
+  margin: 0;
+  font-size: 20pt;
+  font-family: Arial;
+}
+
+.top-name {
+  font-size: 15pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+div > p {
+  font-size: 15pt;
+  font-family: Arial;
+  padding: 15px;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+  font-size: 15pt;
+  font-family: Arial;
+}
+
+.bio {
+  grid-area: bio;
+ 
+}
+
+.tech {
+  grid-area: tech;
+}
+.soft {
+  grid-area: soft;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.list {
+  grid-area: list;
+}

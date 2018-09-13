@@ -6,8 +6,8 @@ body {
   grid-template-areas: "head head head"
                        "main main main";
                       
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: repeat(3, 1fr);  
+  grid-template-rows: 10vh 90vh;
   margin: 0;
   max-height: 100vh;
     }   
@@ -24,7 +24,7 @@ body > header {
   justify-content: space-between;
   padding: 20px;
 }   
- 
+
 body header nav a {
   text-decoration: none;
   color: black;
@@ -34,37 +34,26 @@ body header nav a {
   font-size: 15pt;
   font-weight: bold;
   margin: 0;
-  
 }
 
-body > section {
+body main {
   grid-area: main;
-  
-  display: flex;
-  
-  justify-content: center;
-  flex-direction: row;
-  background-color: silver
+  text-align: center;
 }
 
-.work {
-  
-  padding-top: 100px;
-  padding-left: 40px;
-  justify-content: center;
-  margin: 0;
+h1 {
+  font-size: 40pt;
+}
+li {
   font-size: 20pt;
   font-family: Arial;
-  background-color: rgb(230, 226, 226);
+  list-style-type: none;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+ul {
+  padding-left: 160px;
   
 }
-
-h3 {
-  padding-bottom: 15px;
-}
-
-p{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
